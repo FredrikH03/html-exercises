@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* General styling for the gallery container */
+.gallery {
+    display: flex; /* Aligns the images in a row */
+    justify-content: space-around; /* Adds equal space around each image */
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    margin: 200px; /* Adds margin around the gallery container */
+    padding: 10px; /* Adds padding inside the gallery container */
+    border: 2px solid red; /* Adds a border around the gallery container */
+}
+
+/* Styling for individual images */
+.gallery img {
+    max-width: 150px; /* Sets a maximum width for each image */
+    height: auto; /* Keeps the aspect ratio of the images */
+    margin: 10px; /* Adds space around each image */
+    padding: 5px; /* Adds space inside the image border */
+    border: 2px solid blue; /* Adds a border around each image */
+    border-radius: 5px; /* Adds rounded corners to each image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    border-color: black; /* Changes border color on hover */
+}
